@@ -1,16 +1,23 @@
-function randomize() {
-  let rgbcolor;
-  red = Math.floor(Math.random() * 250 + 0);
-  green = Math.floor(Math.random() * 250 + 0);
-  blue = Math.floor(Math.random() * 250 + 0);
-    
-  rgbColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
-  document.body.style.background = rgbColor;
+let color = ['black', 'white', 'red', 'Gray', 'green', 'brown', 'yellow', 'purple', 'orange', 'cyan',' gold',];
 
-  red = ("0" + red.toString(16)).substr(-2).toUpperCase();
-  green = ("0" + green.toString(16)).substr(-2).toUpperCase();
-  blue = ("0" + blue.toString(16)).substr(-2).toUpperCase();
-}
+let button = document.getElementById('button');
+let h2 = document.querySelector('h2');
+let h3 = document.querySelector('h3');
 
-randomize();
+button.addEventListener('click', function(){
+    let backgroundColor = color[Math.floor(Math.random() * color.length)]
+    let body = document.querySelector('body');
 
+    body.style.background = backgroundColor;
+    h2.innerHTML = backgroundColor;
+    if(backgroundColor === 'black'){
+      h2.style.color = 'white';
+    }
+    if(backgroundColor === 'black'){
+      h3.style.color = 'white';
+    }
+    else{
+      push('error')
+    }
+   
+})

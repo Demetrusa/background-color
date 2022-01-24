@@ -9,28 +9,32 @@
 </head>
 <body>
     <style>
-        #bC1{
+        h3{
             font-size: 50px;
-        }
-        a{
-           text-decoration: none;
-        }
-        .divi{
-            display: flex;
-            justify-content: center;
-            margin-top: 500px;
-
+            z-index: 99;
         }
         h2{
-            padding-left: 20px;
-            font-size: 25px;
+            font-size: 50px;
+        }
+        #container{
+            padding-top:350px;
+            align-items: center;
+            text-align: center;
+        }
+        #container div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     </style>
-    <div class="divi">
-        <div><a id="bC1" href="#" onclick="randomize()"> background Color: </a></div>
-        <div> <h2></h2></div>
-    </div>
- 
-    <script src="./app.js"></script>
+        <div id="container">
+            <button id="button">click Me</button>
+            <div>
+                <h3>background Color:</h3>
+                <h2></h2>
+            </div>
+        </div>   
+    <script src="./script.js"></script>
+       
 </body>
 </html>
