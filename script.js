@@ -12,12 +12,13 @@ button.addEventListener('click', function(){
     h2.innerHTML = backgroundColor;
     if(backgroundColor === 'black'){
       h2.style.color = 'white';
+      h3.style.color = 'white';
     }
     if(backgroundColor === 'black'){
       h3.style.color = 'white';
     }
     else{
-      push('error')
+      h2.style.color = 'black';
+      h3.style.color = 'black';
     }
-   
 })
