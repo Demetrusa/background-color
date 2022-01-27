@@ -1,4 +1,4 @@
-let color = ['black', 'white', 'red', 'Gray', 'green', 'brown', 'yellow', 'purple', 'orange', 'cyan',' gold',];
+let color = ['Black', 'White', 'Red', 'Gray', 'Green', 'Brown', 'Yellow', 'Purple', 'Orange', 'Cyan',' Gold',];
 
 let button = document.getElementById('button');
 let h2 = document.querySelector('h2');
